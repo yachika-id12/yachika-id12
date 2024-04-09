@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,a[5],search_key,flag=0;
+clrscr();
+printf("enter the element of array");
+for(i=0;i<=5;i++)
+scanf("%d",&a[i]);
+printf("enter the key to be search");
+scanf("%d",&search_key);
+for(i=0;i<5;i++)
+{
+if(search_key==a[i])
+{
+flag=1;
+break;
+}
+else
+continue;
+}
+if(flag==1)
+getch();
+}
+
+
+
